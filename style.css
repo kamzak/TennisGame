@@ -10,17 +10,17 @@ body {
 	background-image: url("bg.jpg");
 }
 h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-transform: Uppercase;
-    margin-bottom: .5em;
     font-family: 'Rubik', sans-serif;
     font-size: 4rem;
-    color: #E4E5E6; }
-
-h1 {
+    color: #E4E5E6; 
     position: relative;
-    background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+    background: linear-gradient(to right, #636397, #141E30, #0f0c29);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+}
     
 h1:before,
 h1:after {
