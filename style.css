@@ -8,6 +8,7 @@ body {
     color: white;
     font-family: Sans-Serif;
 	background-image: url("bg.jpg");
+	background-repeat: no-repeat;
 }
 h1 {
     margin-top: 15px;
