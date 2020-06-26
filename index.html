@@ -4,7 +4,7 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <center><h1>Tennis Game v.0.01</h1></center>
+    <center><h1>Tennis Game</h1></center>
     <center><canvas id="gameCanvas" width="800" height="600"></canvas></center>
     <script>
         var canvas;
@@ -93,7 +93,7 @@
 
             ballX += ballSpeedX;
             ballY += ballSpeedY;
-            if(ballX >= canvas.width) {
+            if(ballX >= canvas.width-10) {
                 if(ballY > paddle2Y && ballY < paddle2Y + PADDLE_HEIGHT) {
                     ballSpeedX = -ballSpeedX;
 
@@ -105,7 +105,7 @@
                     ballReset();                    
                 }
             }
-            if(ballX <= 0) {
+            if(ballX <= 10) {
                 if(ballY > paddle1Y && ballY < paddle1Y + PADDLE_HEIGHT) {
                     ballSpeedX = -ballSpeedX;
                     
@@ -117,7 +117,7 @@
                     ballReset();                    
                 }
             }
-            if(ballY >= canvas.height) {
+            if(ballY >= canvas.height-5) {
                 ballSpeedY = -ballSpeedY;
             }
             if(ballY <= 0) {
